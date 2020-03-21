@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<head>
+  <link href="/normalize.css" rel="stylesheet">
+  <link rel='stylesheet' href='./index-styles.css' type='text/css' />
+</head>
+<body>
+  <header>
+    <img src="https://imgur.com/SymafOH.jpg">
+    <h1>Smain's Blog</h1>
+    <ul>
+      <li><a href="#Algeria">About  Algeria</a></li>
+      <li><a href="#Places">15 Best Places to Visit in Algeria</a></li>
+      <li><a href="#cuisine">Algerian cuisine</a></li>
+      <li><a href="./about.html"> My Link</a> </li>
+    </ul>
+  </header>
+
+  <!-- <button> My Link </button> -->
+  
+  
+  <article>
+    <h2 id="Algeria">About Algeria</h2>
+    <p>Algeria has a fantastic diversity of landscape with the Sahara desert in the south, beaches along the Mediterranean sea to the north, mountains that offer excellent hiking during the summer and skiing opportunities in the snow during winter.</p>
+      </article>
+  <article>
+    <h2 id="Places">15 Best Places to Visit in Algeria</h2>
+    <p>The largest country in the continent of Africa, Algeria has a diverse landscape and lots to offer travellers. The journey from Europe is only a short one but the difference between the two continents is immediately noticeable and provides a sense of adventure and intrigue for tourists.  Algeria has many charming cities with winding streets and stunning architecture, Mediterranean coast, lush landscapes and roman ruins to rival anywhere in the world.
+
+    The main attraction in the country however is the Saharan region where the never-ending sand and the mysterious and lively cities are enough to indulge even the most seasoned traveller’s imagination.
+
+    Despite advise about the country not being safe to travel and certain regions being off limits. Most Algerians greet tourists with warm welcomes and are happy to share their way of life with any guests to their country. All the same, any trip to this beautiful country should be well researched to ensure that all travel rules are adhered with.Algiers, Algeria.Ahaggar National Park Tamanrasset
+    Oran, Annaba,Constantine,Ghardaia, Tlemcen Old Town, Setif,El Oued,Djanet, 
+    The Municipal People’s Assembly, Batna, Timgad, Algeria, City Gate, In Salah,Bejaia.</p>
+    
+  </article>
+  <article>
+    <h2 id="cuisine">Algerian cuisine</h2>
+    <p>The cuisine of Algeria is influenced by Algeria's interactions and exchanges with other cultures and nations over the centuries. It is characterized by a wealth derived from both land and sea products. Conquests or demographic movement towards the Algerian territory were two of the main factors of exchanges between the different peoples and cultures (Berbers, Arabs, Turks, Andalusians, French and Spaniards). This cuisine is a Mediterranean and North African cuisine with Berber roots.
+
+    Algerian cuisine offers a variety of dishes depending on the region and the season, but vegetables and cereals remain at its core. Most of the Algerian dishes are centered around bread, meats (lamb, beef or poultry), olive oil, vegetables and fresh herbs. Vegetables are often used for salads, soups, tajines, couscous and sauce-based dishes. Of all the Algerian traditional dishes available, the most famous one is couscous, recognized as a national dish.
+
+    Pork consumption is forbidden to Muslims in Algeria, in accordance with Sharia, the Islamic law.</p>
+    
+  </article>
+  
+  
+      
+<ul id="slides">
+  <li class="slide showing">Slide 1</li>
+  <li class="slide">Slide 2</li>
+  <li class="slide">Slide 3</li>
+  <li class="slide">Slide 4</li>
+  <li class="slide">Slide 5</li>
+</ul>
+
+<script>
+  // Where are the slides linking to?
+  // #ID
+  // .class
+  var slides = document.querySelectorAll('#slides .slide');
+  var currentSlide = 0; // Iterator for the slides - which slide are we on?
+  // How long will each slide run for?
+  var slideInterval = setInterval(nextSlide,2000);
+
+  // this function takes the variables listed above 
+  // and moves the slide forward
+  function nextSlide() {
+    slides[currentSlide].className = 'slide';
+    currentSlide = (currentSlide+1)%slides.length;
+    slides[currentSlide].className = 'slide showing';
+  }
+
+</script>
+
+<br>
+
+
+<!-- What's a div? We'll cover that this week. For now, see if you can understand what it's doing. -->
